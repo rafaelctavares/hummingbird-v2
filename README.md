@@ -1,4 +1,6 @@
+
 # Hummingbird V2
+
 ![Python Tests](https://github.com/CovidZero/hummingbird-v2/workflows/Python%20Tests/badge.svg)
 ![Python Code Style Enforcement](https://github.com/CovidZero/hummingbird-v2/workflows/Python%20Code%20Style%20Enforcement/badge.svg)
 ![Auto Assign](https://github.com/CovidZero/hummingbird-v2/workflows/Auto%20Assign/badge.svg)
@@ -57,6 +59,17 @@ ___
 flake8 src
 ```
 
+#### - Database Seed
+___
+```
+cd hummingbird-v2
+export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+export FLASK_ENV=local
+python src/main.py 
+flask seed run
+```
+
+
 
 ### Running with docker container
 
@@ -90,3 +103,10 @@ flask db upgrade --directory=local_migrations
 
 ## Swagger API Doc 
  - http://127.0.0.1:5000/data_api/v1/
+
+
+ ## Contribution Guide
+
+
+ - If you want to contribute to this project with us, please visit our [_Contribution Guide._](https://github.com/CovidZero/hummingbird-v2/blob/staging/CONTRIBUTING.md)
+
